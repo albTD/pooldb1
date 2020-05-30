@@ -10,7 +10,7 @@ searchRouter.use(bodyparser.json());
 const con = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "",
+    password: "thinkdigital",
     database: "poolapp"
 });
 

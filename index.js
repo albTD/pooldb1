@@ -27,7 +27,7 @@ app.use(bodyparser.urlencoded({
 const con = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "",
+  password: "thinkdigital",
   database: "poolapp"
 });
 
