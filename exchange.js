@@ -44,7 +44,7 @@ if(req.files)
 {console.log('if');
     var file = req.files.filename
         var filenames=Date.now()+'-'+file.name
-        const filepath='uploads' + '/' +filenames;
+        const filepath=filenames;
         console.log(filenames) 
          file.mv('./uploads/'+filenames,function(err){
             console.log('entered');
@@ -81,7 +81,7 @@ if(req.files)
 }
 else{console.log('else');
         var filenames='sail.ico'
-    const filepath='uploads' + '/' +filenames
+    const filepath=filenames
      var title = req.body.filename1;
        
         var category = req.body.filename2;

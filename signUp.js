@@ -33,7 +33,7 @@ console.log(req.files);
 if(req.files){
         var file = req.files.filename
         var filenames=Date.now()+'-'+file.name
-        const filepath='uploads1' + '/' +filenames;
+        const filepath=filenames;
         console.log(filenames)
         file.mv('./uploads1/'+filenames,function(err){
             console.log('entered');
@@ -89,7 +89,7 @@ if(req.files){
 }
 else{
      var filenames='sail.ico'
-    const filepath='uploads1' + '/' +filenames
+    const filepath=filenames
      var name = req.body.filename1;
          var email = req.body.filename2;
          var unHashedPassword = req.body.filename3;

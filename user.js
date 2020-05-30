@@ -33,7 +33,7 @@ var file = req.files.filename
 // console.log(extn);
 // if((extn=='png' || extn=='jpeg' || extn=='jpg' || extn=='jfif')){
         var filenames=Date.now()+'-'+file.name
-        const filepath='uploads1' + '/' +filenames;
+        const filepath=filenames;
  file.mv('./uploads1/'+filenames,function(err){
             console.log('entered');
             if(err){

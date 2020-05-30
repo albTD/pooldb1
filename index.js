@@ -6,7 +6,9 @@ const cors = require('cors'); //for http permissions
 
 const app = express();
 app.use(cors());
-
+console.log(__dirname);
+app.use('/',express.static(__dirname + '/uploads'));
+app.use('/',express.static(__dirname + '/uploads1'));
 app.use('/signup', require('./signUp'));                   //signUp router
 app.use('/userAuth', require('./login'));                 //login router
 app.use('/user', require('./user'));                     //current user details, posts
