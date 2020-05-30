@@ -22,7 +22,7 @@ mailRouter.route('/')
  
 mailRouter.route('/sendmail')
     .post((req, res) => {
-        console
+
 const nodemailer = require('nodemailer');
 let transporter=nodemailer.createTransport({
     service:'gmail',
